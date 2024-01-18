@@ -13,7 +13,7 @@
         chdir: /var/lib/jenkins/workspace/petshop-job
 
     - name: tag image
-      command: docker tag petstore sameerdock/petstore:latest 
+      command: docker tag petstore sameerdock/petstore 
 
     - name: Log in to Docker Hub
       community.docker.docker_login:
@@ -22,7 +22,7 @@
         password: dckr_pat_9EWNPL4uPwX99A0sw08C-a4PXKw
 
     - name: Push image
-      command: docker push sameerdock/petstore:latest
+      command: docker push sameerdock/petstore
 
     - name: Run container
-      command: docker run -d --name pet1 -p 8081:8080 sameerdock/petstore:latest
+      command: docker run -d --name pet1 -p 8081:8080 sameerdock/petstore
