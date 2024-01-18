@@ -19,7 +19,7 @@
       community.docker.docker_login:
         registry_url: https://index.docker.io/v1/
         username: sameerdock
-        password: dckr_pat_ifcqnkfAvhxocECAXe_RynDaJu8
+        password: dckr_pat_9EWNPL4uPwX99A0sw08C-a4PXKw
 
     - name: Push image
       command: docker push sameerdock/petstore:latest
