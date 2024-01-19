@@ -25,4 +25,4 @@
       command: docker push sameerdock/petstore
 
     - name: Run container
-      command: docker run -d --name pet1 -p 8081:8080 sameerdock/petstore
+      command: docker run -d --name pet1 -p 8080:8080 sameerdock/petstore
