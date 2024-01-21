@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: petshop
-        image: sameergi/petstore
+        image: sameerdock/petstore
         ports:
         - containerPort: 8080
         imagePullPolicy: Always
